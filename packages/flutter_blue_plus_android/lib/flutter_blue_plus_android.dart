@@ -128,7 +128,7 @@ final class FlutterBluePlusAndroid extends FlutterBluePlusPlatform {
   ) async {
     return await _invokeMethod<bool>(
       'createBond',
-      request.toMap(),
+      request.remoteId.str,
     ) == true;
   }
 

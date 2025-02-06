@@ -552,11 +552,11 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
                     return;
                 }
             } else {
-                if ((characteristic.properties & CBCharacteristicPropertyWrite) == 0) {
-                    NSString* s = @"The WRITE property is not supported by this BLE characteristic";
-                    result([FlutterError errorWithCode:@"writeCharacteristic" message:s details:NULL]);
-                    return;
-                }
+//                 if ((characteristic.properties & CBCharacteristicPropertyWrite) == 0) {
+//                     NSString* s = @"The WRITE property is not supported by this BLE characteristic";
+//                     result([FlutterError errorWithCode:@"writeCharacteristic" message:s details:NULL]);
+//                     return;
+//                 }
             }
 
             // remember the data we are writing

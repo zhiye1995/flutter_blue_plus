@@ -934,11 +934,11 @@ public class FlutterBluePlusPlugin implements
                             break;
                         }
                     } else {
-                         if ((characteristic.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE) == 0) {
-                            result.error("writeCharacteristic",
-                                "The WRITE property is not supported by this BLE characteristic", null);
-                            break;
-                        }
+                        //  if ((characteristic.getProperties() & BluetoothGattCharacteristic.PROPERTY_WRITE) == 0) {
+                        //     result.error("writeCharacteristic",
+                        //         "The WRITE property is not supported by this BLE characteristic", null);
+                        //     break;
+                        // }
                     }
 
                     // check maximum payload
